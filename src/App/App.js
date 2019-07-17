@@ -1,51 +1,78 @@
 import React from 'react';
+import {
+  BrowserRouter,
+  Redirect,
+  Route,
+  Switch,
+} from 'react-router-dom';
 import firebase from 'firebase/app';
-
 import Auth from '../components/Auth/Auth';
 import Home from '../components/Home/home';
 import MyNavbar from '../components/MyNavbar/MyNavbar';
-
 import './App.scss';
-
 import fbConnection from '../helpers/data/connection';
+import NewRecipe from '../components/NewRecipe/New.Recipe';
+import EditRecipe from '../components/EditRecipe/EditRecipe';
+import MyRecipe from '../components/MyRecipe/MyRecipe';
+
 
 fbConnection();
+const PublicRoute = ({ component: Component, authed, ...rest }) => {
+  const routeChecker = props => (authed === false
+    ? (<Component {...props} />)
+    : (<Redirect to={{ pathname: '/home', state: { from: props.location } }} />));
+  return <Route {...rest} render={props => routeChecker(props)} />;
+};
 
+const PrivateRoute = ({ component: Component, authed, ...rest }) => {
+  const routeChecker = props => (authed === true
+    ? (<Component {...props} />)
+    : (<Redirect to={{ pathname: '/auth', state: { from: props.location } }} />));
+  return <Route {...rest} render={props => routeChecker(props)} />;
+};
 class App extends React.Component {
-  state = {
-    authed: false,
-  }
+    state = {
+      authed: false,
+    }
 
-  componentDidMount() {
-    this.removeListener = firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        this.setState({ authed: true });
-      } else {
-        this.setState({ authed: false });
-      }
-    });
-  }
+    componentDidMount() {
+      this.removeListener = firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          this.setState({ authed: true });
+        } else {
+          this.setState({ authed: false });
+        }
+      });
+    }
 
-  componentWillUnmount() {
-    this.removeListener();
-  }
+    componentWillUnmount() {
+      this.removeListener();
+    }
 
-  render() {
-    const { authed } = this.state;
-    const loadComponent = () => {
-      if (authed) {
-        return <Home />;
-      }
-      return <Auth />;
-    };
-
-    return (
-      <div className="App">
-        <MyNavbar authed={authed} />
-        {loadComponent()}
-      </div>
-    );
-  }
+    render() {
+      const { authed } = this.state;
+      return (
+        <div className="App">
+          <BrowserRouter>
+            <React.Fragment>
+              <MyNavbar authed={authed} />
+              <div className='container'>
+                <div className="row">
+                  <Switch>
+                    <PublicRoute path='/auth' component={Auth} authed={authed} />
+                    <PrivateRoute path='/home' component={Home} authed={authed} />
+                    <PrivateRoute path='/new' component={NewRecipe} authed={authed} />
+                    <PrivateRoute path='/edit/:id' component={EditRecipe} authed={authed} />
+                    <PrivateRoute path='/recipe/:id' component={MyRecipe} authed={authed} />
+                    <Redirect from="*" to="/auth" />
+                  </Switch>
+                </div>
+              </div>
+            </React.Fragment>
+          </BrowserRouter>
+        </div>
+      );
+    }
 }
 
 export default App;
