@@ -5,9 +5,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://www.mazola.com/img/page-background.png");
+    background-position: center center ; 
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.d-flex {
+  display: flex;
+  text-align: center;
+  flex-wrap: nowrap;
+  min-width: 600px;
+  flex-grow: 0;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  display: flex!important;
+}
+
+
+  .full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color:bisque;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.row {
+  display: inline;
 }

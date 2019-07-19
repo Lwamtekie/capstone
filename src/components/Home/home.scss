@@ -1,12 +1,15 @@
-.Home {
-  display: block;
-  
+
+p {
+  border: black;
+  border: double;
+  border: solid;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align-last: left;
+  text-align: initial;
+  font-style: oblique;
 }
 
-.body{
-  background-image: url("https://www.mazola.com/img/page-background.png");
-  background-position: center center ; 
-  background-size: cover;
-  background-attachment: fixed;
-
-} 
+.card-img-top {
+  width: 30%;
+}
