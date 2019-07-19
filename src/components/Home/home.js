@@ -40,7 +40,7 @@ class Home extends React.Component {
      ));
 
      return (
-        <div className="Home col">
+        <div className="Home row">
           <h1>Home</h1>
           <div className="d-flex">
             {makeRecipeCards}

@@ -11,7 +11,6 @@ import Home from '../components/Home/home';
 import MyNavbar from '../components/MyNavbar/MyNavbar';
 import './App.scss';
 import fbConnection from '../helpers/data/connection';
-import NewRecipe from '../components/NewRecipe/New.Recipe';
 import EditRecipe from '../components/EditRecipe/EditRecipe';
 import MyRecipe from '../components/MyRecipe/MyRecipe';
 
@@ -56,12 +55,12 @@ class App extends React.Component {
           <BrowserRouter>
             <React.Fragment>
               <MyNavbar authed={authed} />
-              <div className='container'>
+              <div className='AUTH'>
                 <div className="row">
                   <Switch>
                     <PublicRoute path='/auth' component={Auth} authed={authed} />
                     <PrivateRoute path='/home' component={Home} authed={authed} />
-                    <PrivateRoute path='/new' component={NewRecipe} authed={authed} />
+                    <PrivateRoute path='/my' component={MyRecipe} authed={authed} />
                     <PrivateRoute path='/edit/:id' component={EditRecipe} authed={authed} />
                     <PrivateRoute path='/recipe/:id' component={MyRecipe} authed={authed} />
                     <Redirect from="*" to="/auth" />
