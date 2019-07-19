@@ -11,34 +11,44 @@ class Home extends React.Component {
     recipes: [],
   }
 
-  componentDidMount() {
+  getRecipes = () => {
     const { uid } = firebase.auth().currentUser;
     RecipeData.getMyRecipes(uid)
       .then(recipes => this.setState({ recipes }))
       .catch(err => console.error('could not get recipes', err));
   }
 
+  componentDidMount() {
+    this.getRecipes();
+  }
 
-  render() {
-    const test = this.state.recipes;
-    const makeRecipeCards = this.state.recipes.map(recipe => (
+   deleteRecipe = (recipeId) => {
+     console.error(recipeId);
+     RecipeData.deleteRecipe(recipeId)
+       .then(() => this.getRecipes())
+       .catch(err => console.error('unable to delete', err));
+   }
+
+
+   render() {
+     const makeRecipeCards = this.state.recipes.map(recipe => (
         <RecipeCard
           key={recipe.id}
           recipe={recipe}
+          deleteRecipe={this.deleteRecipe}
         />
-    ));
+     ));
 
-    return (
+     return (
         <div className="Home col">
           <h1>Home</h1>
           <div className="d-flex">
             {makeRecipeCards}
-            {console.error(test)}
           </div>
 
         </div>
-    );
-  }
+     );
+   }
 }
 
 export default Home;
