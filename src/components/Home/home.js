@@ -1,22 +1,42 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import RecipeData from '../../helpers/data/Recipe';
+import RecipeCard from '../RecipeCard/RecipeCard';
+
 import './home.scss';
 
 class Home extends React.Component {
-  editEvent = (e) => {
-    e.preventDefault();
-    const orderId = '12345';
-    this.props.history.push(`/edit/${orderId}`);
+  state = {
+    recipes: [],
   }
 
+  componentDidMount() {
+    const { uid } = firebase.auth().currentUser;
+    RecipeData.getMyRecipes(uid)
+      .then(recipes => this.setState({ recipes }))
+      .catch(err => console.error('could not get recipes', err));
+  }
+
+
   render() {
-    const singleLink = '/recipe/12345';
+    const test = this.state.recipes;
+    const makeRecipeCards = this.state.recipes.map(recipe => (
+        <RecipeCard
+          key={recipe.id}
+          recipe={recipe}
+        />
+    ));
+
     return (
-      <div className="Home">
-        <h1>Home</h1>
-        <button className="btn btn-danger" onClick={this.editEvent}>Edit a thing</button>
-        <Link to={singleLink}>View Single</Link>
-      </div>
+        <div className="Home col">
+          <h1>Home</h1>
+          <div className="d-flex">
+            {makeRecipeCards}
+            {console.error(test)}
+          </div>
+
+        </div>
     );
   }
 }

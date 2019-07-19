@@ -1,11 +1,11 @@
 {
   "recipe1": {
   "name": "DERHO",
-  "imageUrl": "https://cdn1.vox-cdn.com/thumbor/eOqYf_rodNrOZ9toRkoIBi30x3k=/1200x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/7524151/untitled-9842-2.0.jpeg",
+  "imageurl": "https://cdn1.vox-cdn.com/thumbor/eOqYf_rodNrOZ9toRkoIBi30x3k=/1200x0/filters:no_upscale()/cdn0.vox-cdn.com/uploads/chorus_asset/file/7524151/untitled-9842-2.0.jpeg",
   "type": "meat",
   "ingredients":"3lbs chicken,2 cup onion, chopped,2 tbsp garlic, minced,2 tbsp lemon juice,2 tsp salt,2 tsp ginger, fresh, chopped,½ tsp fenugreek,½ tsp cardamom, ¼ tsp nutmeg, ¼ cup butter or niter kebbeh,¾ cup water,¼ cup dry white wine,¼ cup berbere sauce,2 tbsp paprika, 4 hard-boiled eggs",
   "instruction": "Cut chicken into serving pieces and pat dry.Combine onion, garlic, lemon juice, salt, ginger, fenugreek, cardamom, nutmeg, and butter or niter kebbeh in a saucepan.Simmer two to three minutes.Add the water, wine, berbere sauce, and paprika.Cook briskly for three to five minutes or until sauce is the consistency of cream.Add the chicken pieces.Cover tightly and simmer 15 minutes.Pierce eggs with tines of a fork and add to the pan.Cover and cook 15 minutes more, or until chicken is tender.",
-  "uid":"12345"
+  "uid":"CHKx9ALd2gddsofHKF3PxMs3zkS2"
   },
   "recipe2": {
     "name": "Zigni",
@@ -13,7 +13,7 @@
     "type": "meat",
     "ingredients":"1 lb Ground Beef (lean),2 cup red onions -- chopped,1/2 cup berbere or awaze,2 cup water,1 cup Niter kebbeh,1/4 tsp cardamom,1/4 tsp bishop's weed,salt -- to taste" ,
     "instruction": "ZIGNI WE'T could I guess be called an Ethiopian Sloppy Joe. Don't worry if you can't find bishop's weed. Add a little crushed mint instead.Fry onions WITHOUT grease in a pan until they are brown. Add berbere or awaze and water and stir. Add niter kebbeh. Sprinkle ground Beef into the pan while stirring. Add spices and let the stew cook until the meat is done. Serve hot. Store in refrigerator.",
-    "uid":"12345"
+    "uid":"CHKx9ALd2gddsofHKF3PxMs3zkS2"
     },
     "recipe3": {
       "name": "Shero",
@@ -21,7 +21,7 @@
       "type": "Vegetarian",
       "ingredients":"½ kg dry green peas,3 large onions,½ cup oil,1 head garlic,½ tsp ground ginger, ½ tsp black pepper,1 tsp salt, 3 cup water" ,
       "instruction": "Soak the peas in tap water for 20 minutes.Peel the onions and cut into small cubes.Peel and mash the garlic.Heat the oil in a pan and sauté the onion and garlic until golden.Add the ginger, pepper and salt and 2 cups water.Stir well, cover and bring to boil.When the water boil, add the peas and the rest of the water and cook 40 minutes on a medium-low flame.Serve hot with enjera.",
-      "uid":"12345"
+      "uid":"CHKx9ALd2gddsofHKF3PxMs3zkS2"
       },
       "recipe4": {
         "name": "Enjera",
@@ -29,7 +29,7 @@
         "type": "light bread",
         "ingredients":"½ kg sifted flour,1 bag baking powder,50 gm quick yeast,½ cup oil,8 cups water" ,
         "instruction": "Put the flour in a deep bowl. Add the yeast and baking powder.Add water gradually while stirring until you get a smooth batter. Keep for 3 days at (Ethiopian) room temperature.Stir every four hours.Heat a frying pan (25 – 30 cm diameter) and oil with 2 – 3 Tbs oil.Pour batter to form a layer at least ½ cm thick.Cover and fry for 2 – 3 minutes. When the bread starts to lift at the edge and solidifies at the lower side, turn it over. You get a kind of soft and porous pita.Wet with water the lower side of the pan and oil the inner side before each bread.",
-        "uid":"12345"  
+        "uid":"CHKx9ALd2gddsofHKF3PxMs3zkS2"  
       },
         "recipe5": {
           "name": "Hambesha",
@@ -37,7 +37,7 @@
           "type": "Bread",
           "ingredients":"1 tbl active dry yeast,1/4 cup Warm water,2 tbl Ground coriander,1 tsp Ground cardamom,1/2 tsp white pepper,1 tsp Ground fenugreek,2 tsp salt,1/3 cup vegetable oil,1 1/4 cup Lukewarm water, 5 cup unbleached flour",
           "instruction": "Dissolve the yeast in warm water for 10 minutes. Add the coriander, cinnamon, white pepper, fenugreek, salt, oil and lukewarm water, and stir well. Slowly add the flour until a mass forms. On a floured board, knead the dough for 10 minutes or until it is smooth and tiny bubbles form.(note: this recipe makes a stickier dough than usual).Reserve a 1-inch piece of dough. With floured hands spread the dough out on an ungreased pizza pan. Using a sharp knife, score the dough in a design similar to the spokes of a bicycle wheel. Place the reserved ball of dough in the center of the scored dough. Cover and let rise one hour.Bake at 350F for an hour or until golden brown. Combine the topping ingredients (cayenne, oil, ground ginger, ground cloves, cinnamon) in a small bowl. While still warm brush the bread with topping.Yield: 1 16-inch loaf.",
-          "uid":"12345"  
+          "uid":"CHKx9ALd2gddsofHKF3PxMs3zkS2"  
         },
         "recipe7": {
          "name": "Aleecha",
@@ -45,7 +45,7 @@
          "type":"Vegetarian",
          "ingredients":"1/2 cup Onion, sliced,10 clv garlic, sliced thin2 cup carrots, sliced thin1 cup water, 3 tbl corn oil,1 tsp turmeric, ground 1 fresh hot green peppers, halved, to 3 peppers 1 lb cabbage, coarsely sliced1 tsp queman, see note1 tbl tomato paste1 tsp salt, to taste 1 lb potatoes, cut like French",
          "instruction":"Aleecha is a mixed vegetable stew. Quemam contains an ingredient not found in the US. I'd substitute dry berbere spice mix. In dry pan over moderate low heat, stir fry Onion, garlic, and carrots for 2 mins. Add 1/2 cup of the water and cook 5 mins longer. Add the oil and continue to simmer.Add the turmeric, chilies, and cabbage. Cover the pan and steam to reduce the bulk for 2 mins. Stir well and add the quemam, tomato paste, salt and the potatoes.Cover the pan and cook for 5 mins. Add the remaining water and simmer for 5 minutes more to soften the potatoes and thicken the sauce somewhat. Serve at room temperature with Injeera.",
-         "uid": "12345"
+         "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         },
         "recipe8": {
           "name": "Hamli",
@@ -53,7 +53,7 @@
           "type":"Vegetarian",
           "ingredients":"2 tablespoons grape seed or coconut oil,1 large onion, thinly sliced, 4 garlic cloves, minced,1 tablespoon freshly grated ginger,1 jalapeno, seeded,1 sweet red pepper, chopped,1 pound collard greens, washed, tough central stems removed and shredded or chopped fine,1/2 vegetable broth or water,1 cinnamon stick, 1 teaspoon turmeric, 1 teaspoon allspice,sea salt to taste",
           "instruction":"Heat oil in a large skillet over medium-high heat. Saute onions, stirring, until they soften and turn translucent, about 5 minutes. Add garlic, ginger, red pepper and jalapeno (wearing gloves prevents chili burns). Cook, stirring, until the vegetables soften — about 5 more minutes. Drop in cinnamon stick, stir in turmeric and allspice.Add the chopped collards by the handful. Work them in with the other vegetables and spices. As they soften, add vegetable broth or water. Cover, reduce heat to medium. Cook till heated through, another 10 minutes. Remove cinnamon stick, add a nice pinch or two of sea salt and serve.",
-          "uid": "12345"
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         },
         "recipe9": {
           "name": " Seng(Green pepper relish)",
@@ -61,7 +61,7 @@
           "type":"Appetizers",
           "ingredients":"1 large green bell pepper, very fresh, 1 medium garlic clove, coarsely chopped, ⅛ teaspoon salt (to taste), 1 jalapeño chile, seeded and diced (optional)",
           "instruction":"Wash the bell pepper and coarsely chop, removing core,seeds and membranes.Put pepper, garlic and salt in the food processor fitted with a blade and scraping down the sides of the bowl repeatedly with a rubber spatula, process until rather smooth. Taste and serve with spicy meat and bread. If you prefer some heat to the relish add as much of the diced chile as you like.",
-          "uid": "12345"
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         },  
         "recipe10": {
           "name": "Ayib(Ethiopian Cheese Dip)",
@@ -69,7 +69,7 @@
           "type":"Appetizers",
           "ingredients":"1 lb fresh goat cheese or sheep's milk cheese, farmer's cheese or pot Cheese, ¼ cup plain yogurt, 3 tablespoons chopped fresh parsley or cilantro, 1 tablespoon chopped fresh basil or ½ teaspoon dried basil, 1 tablespoon chopped fresh oregano or 1 teaspoon dried oregano, 1-3 teaspoon grated lemons, zest of, 1 teaspoon salt, about¼ teaspoon ground black pepper",
           "instruction":"Combine all the ingredients.The mixture should be thick enough to maintain its shape. Serve with injera (Ethiopian pancake bread) or pita bread.",
-          "uid": "12345"
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         },  
         "recipe11": {
           "name": "Vegetable Sanbusa",
@@ -77,7 +77,7 @@
           "type":"vegetarian",
           "ingredients":"¾ cup butter, ¾ cup oil, 5 cups white flour, 2 teaspoons salt,  ½-¾ cup cold water, ¼ cup olive oil,  ¾ cup of finely chopped onions,  1½ lbs leafy greens, coarsely chopped (spinach, chard, dandelion or nettles),  2 teaspoons salt, ½ cup walnuts, coarsely chopped and lightly toasted,  ¼ cup currants, ¾ teaspoon pepper",
           "instruction":"Melt the butter with the oil.Combine the flour and salt in a bowl, make a well in the center, and add oil and butter.Stir vigorously until combined, and then add water until the dough holds together and comes away from the sides of the bowl.Wrap the ball of dough in plastic and let rest in the refrigerator while preparing the stuffing.Heat the olive oil over medium heat, and then sauté the onions for 2 minutes.Add the greens and salt and stir well.Lower the heat, cover the pan, and cook until the greens are wilted and give off their juices.Turn off the heat, add the toasted walnuts, currants and pepper, and stir well.Preheat the oven to 350 °F degrees.For each pastry, take a walnut-sized piece of dough and roll it out into a 3-inch circle.Place a teaspoonful of filling in the center of the dough, fold the circle into a half-moon shape and pinch the edges firmly. (Another traditional shape is the triangular pocket, formed by pinching together the edges of the circle in three seams that meet in the center over the filling).Place the pastries on an ungreased baking sheet and bake in the oven for 45 minutes, until golden yellow, or deep fry in vegetable oil.Serve warm.",
-          "uid": "12345"
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         },  
         "recipe12": {
           "name": "Temtmo",
@@ -85,15 +85,15 @@
           "type":"vegetarian",
           "ingredients":"1 cup dried lentils, 2 qt water, ¼ cup minced shallots, 1 clove garlic, minced¼ cup water, 2 tbsp berbere, 1 tbsp olive oil, ½ tsp onion salt, additional water as needed",
           "instruction":"Cook lentils in boiling water about 35 – 40 minutes, until soft and tender. Meanwhile, cook shallots in a dry pan until soft and light brown, stirring frequently to prevent burning.Add garlic and continue stirring.Add ¼ cup water, berbere, and olive oil.Drain and mash lentils and add to shallot mixture then stir in onion salt.Simmer 30 minutes to 1 hour.You may need to add more water to keep a consistency similar to oatmeal. Serve hot or at room temp.",
-          "uid": "12345"
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         },  
         "recipe13": {
           "name": "kolo",
           "imageurl": "https://i.pinimg.com/564x/3d/c8/4c/3dc84cfedee445a82e9a4b24e418bc25.jpg",
           "type":"snack",
-          "ingredients":"with dried garbanzo beans, Roasted barley, . ",
-          "instruction":"",
-          "uid": ""
+          "ingredients":"with dried garbanzo beans, Roasted barley, oil .",
+          "instruction":"Barley is the main grain which dominated the combination about 75% in preparing Kolo, Chickpeas and Sunflower seed cover the rest in completing the combination. The right kind of Barley grain which is locally known as Senef Kolo picked from the local market. Skillfully and patiently roasting the grains separately on a large roasting pan, creatively playing with it till it is evenly and beautifully roasted … brings out the delicious nutty flavor, delightful crunchiness",
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         },  
         "recipe14": {
           "name": "comidere Fetefet(salad)",
@@ -101,7 +101,7 @@
           "type":"vegetarian",
           "ingredients":"1/4 c. canola oil,3 tbsp. vinegar or wine (I’ve used white vinegar, red wine vinegar, white wine, really old leftover white wine…the recipe is forgiving.  Use what you have!), Juice of one lemon (about 2-3 tbsp. bottled juice), 1-2 cloves garlic, minced, 2 tsp. berbere (I use more, but we like it very hot),3-4 large tomatoes (or any other kind of tomatoes you have),1/2- 1 onion, finely chopped, 1-2 jalapeño peppers, chopped and if desired, de-seeded for less heat, 2 pieces injera, torn into bite-size pieces",
           "instruction":"Combine the ingredients for the dressing and pour over the chopped vegetables (and injera, if making the timatim firfir).  Serve chilled.  Or just eat it the way it is and don’t tell anyone you made it so you don’t have to share.  Whatever works for you…",
-          "uid": "12345"
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         },  
         "recipe15": {
           "name": " Katencha (Injera Chips)",
@@ -109,7 +109,7 @@
           "type":"vegetarian",
           "ingredients":"berbere,oil, injera",
           "instruction":"Preheat the oven to 275°.  In a small bowl, combine the oil and berbere in proportions to your liking.  We bought some berbere recently that isn’t particularly hot, so I added at least a tablespoon for every quarter-cup of oil.  Tear a piece of injera in half and arrange it on one baking sheet as shown, and then do the same on a second baking sheet.Using a pastry brush, spread the oil and berbere mixture onto the injera.  Bake for about 60 minutes (more for really crispy, crunchy chips, less for chewier chips) and allow to cool before breaking into chips",
-          "uid": "12345"
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         },  
         "recipe16": {
           "name": "Kitfo(row meat)",
@@ -117,7 +117,7 @@
           "type":"meat",
           "ingredients":"Ingredients of the Steak Tartar (Kitfo), lbs top round beef (freshly cut), teaspoons ground cayenne pepper (Mitmita), tablespoons clarified butter (Nitir Kebe),  teaspoon cardamom powder (korerima), 1⁄4 teaspoon garlic powder (optional), salt and black pepper..",
           "instruction":"Cut the meat in small pieces; remove fat and seams.In a food processor put small amount of the meat at a time, spread some mitmita, grind until meat is finely chopped; using a fork, remove any residue of fat and seams; place the spicy ground meat in a dish; repeat the process until all required meat is done.In small pot, on a lower heat melt the butter, add the remaining mitmita, false cardamom, (garlic, black pepper, salt, if needed); remove from heat.Combine the spicy ground meat with the spicy butter; using fork and spoon, mix it until completely marinated.Place it in a lightly warm serving dish, serve it immediately with Injera or bread. If preferred, sauté the marinated meat for two to three minutes.",
-          "uid": "123456"
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2"
         }, 
         "recipe17": {
           "name": "Mase",
@@ -125,7 +125,7 @@
           "type":"drink",
           "ingredients":"You may use 1 tablespoon of hops cones in pace of the gesho leaves.4 cups (32 ounces) honey1 cup of gesho leaves ",
           "instruction":"Mix the honey with 16 cups (1 gallon) of water and put it in a large glass container (such as a 2-gallon jar) and let it stand for 2 days at room temperature. On the third day, place the leaves in a pot with 8 cups of the honey and water mixture. Bring it to a boil and simmer it for 20 minutes over a low heat. Pour this boiled mixture back into the container of mixed honey and water and let it stand for an additional 7 days at room temperature.Strain the mixture, discard the leaves. Cover the mixture and let it stand for another 2 days. You may now strain the honey wine through a clean cloth and serve either at room temperature or chilled.",
-          "uid": "123456" 
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2" 
         },
         "recipe18": {
           "name": "Sewa",
@@ -133,7 +133,7 @@
           "type":"drink",
           "ingredients":"6 quarts Gesho is a kind of buckthorn shrub with bitter leaves that have a taste similar to hops. One ounce (about 1 cup) of hopes cones, available in beer-making stores, can be substituted for the gesho leaves. Making suwa and allowing it to ferment takes thirteen days. We had it during the feast of St. Mary at an Eritrean teacher’s parents’ home. They served it room temperature. ½ pound gesho leaves  1 pound wheat berries (whole-wheat kernels) 8 cups of barley flour ",
           "instruction":"Grind the gesho leaves in a blender or a food processor and put them into 8 cups of water and boil for about 15 minutes. Pour the boiled mixture into a large earthenware or glass container and add 16 cups (1 gallon) of water. Cover the container and let it stand for 6 days at room temperature, while you prepare the wheat berries. Put the wheat berries in a covered container and add enough water to cover them. In about 3 days they will start to germinate. At that time, take them out of the water and place them in an empty container, cover it, and let them continue germinating at room temperature for 3 more days. Remove the germinating wheat, spread it out on a baking sheet, and dry it in a 150°F oven for 1 hour, until they are crisp. Grind in a food processor, and add to the soaking leaves and water. Mix the barley flour with 3 cups of water to make a dough. Spread it out on a baking sheet and bake it for about 10 minutes, until it browns on top. Let it cool. Then break it into pieces and add it to the gesho leaves and wheat berry mixture n the container. Let the container stand for an additional 7 days at room temperature. At the end of that time, you will have a slightly alcoholic beverage. Before it can be served, it must be strained several times through a clean cloth. Keep the suwa in the refrigerator or bottle it. It will keep for several weeks.",
-          "uid": "123456" 
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2" 
         },
         "recipe19": {
           "name": "Fit’fit (Butter Spiced Crumble Bread)",
@@ -141,7 +141,7 @@
           "type":"breakfast",
           "ingredients":"4 servings,this is very tasty, eaten with the hands.1 ½ cups butter3 teaspoons of berbere, 6 cups of torn injera pieces, or other bread with the crusts removed",
           "instruction":"Melt the butter over a low heat, watching carefully so it does not burn. Add the berbere and stir constantly over a low heat for 1 minute.Remove from the heat. Let stand for 5 minutes.Return to the heat and warm the butter, stirring constantly, for 1 minute.Pour the melted butter over the torn injera in a large bowl. Mix vigorously, using a fork, until you have a quantity of buttery crumbs.Eat, without utensils, but forming the crumbs into small balls with your fingers.",
-          "uid": "12345" 
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2" 
         },
         "recipe20": {
           "name": "Kulu’wa (Eritrean Chopped Meat)",
@@ -149,6 +149,6 @@
           "type":"meat",
           "ingredients":"4 servings.Although many Eritrean dishes are highly spiced (they are doing a number on my digestive system), this one is flavorful, but not very spicy. 3 tablespoons unsalted butter, 1 onion, finely diced, 1 tomato, finely diced,  2 cloves garlic, finely diced,  ½ teaspoon berbere, 1 pound top round beef, cut into 1/2-inch pieces, ½ teaspoon salt,   ¼ teaspoon pepper ",
           "instruction":"Melt the butter in a large frying pan. Sauté the onion until it is golden. Add the tomato, garlic, and berbere. Stir. Add the meat and sauté, stirring often, for about 10 minutes. The liquid will evaporate and the meat will be flavored with the vegetable mixture. Serve with bread or injera.",
-          "uid": "12345" 
+          "uid": "CHKx9ALd2gddsofHKF3PxMs3zkS2" 
         }
 }
