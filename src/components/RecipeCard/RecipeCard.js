@@ -1,7 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import recipeShape from '../../helpers/propz/recipeShape';
 
 
 class RecipeCard extends React.Component {
+  static propTypes = {
+    recipe: recipeShape.recipeCardShape,
+    deleteRecipe: PropTypes.func.isRequired,
+  }
+
+  deleteMe = (e) => {
+    e.preventDefault();
+    const { recipe, deleteRecipe } = this.props;
+    deleteRecipe(recipe.id);
+  }
+
   render() {
     const { recipe } = this.props;
     return (
@@ -10,11 +23,10 @@ class RecipeCard extends React.Component {
           <div className="card-body">
             <h4 className="card-title">{recipe.name}</h4>
             <img src={recipe.imageurl} className="card-img-top" alt="..." />
-            {console.error(recipe.imageUrl)}
-            <h5 className="card-title">{recipe.type}</h5>
+           <h5 className="card-title">{recipe.type}</h5>
             <p className="card-text">{recipe.ingredients}</p>
             <p className="card-text">{recipe.instruction}</p>
-            {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
+            <button className="btn btn-danger" onClick={this.deleteMe}>Delete</button>
           </div>
         </div>
       </div>

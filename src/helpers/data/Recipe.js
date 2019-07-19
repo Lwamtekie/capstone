@@ -18,7 +18,10 @@ const getMyRecipes = uid => new Promise((resolve, reject) => {
     })
     .catch(err => reject(err));
 });
+const deleteRecipe = recipeId => axios.delete(`${baseUrl}/recipe/${recipeId}.json`);
+
 
 export default {
   getMyRecipes,
+  deleteRecipe,
 };
