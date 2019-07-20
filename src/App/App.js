@@ -12,7 +12,7 @@ import MyNavbar from '../components/MyNavbar/MyNavbar';
 import './App.scss';
 import fbConnection from '../helpers/data/connection';
 import EditRecipe from '../components/EditRecipe/EditRecipe';
-import MyRecipe from '../components/MyRecipe/MyRecipe';
+import MyRecipes from '../components/MyRecipes/MyRecipes';
 
 
 fbConnection();
@@ -60,9 +60,9 @@ class App extends React.Component {
                   <Switch>
                     <PublicRoute path='/auth' component={Auth} authed={authed} />
                     <PrivateRoute path='/home' component={Home} authed={authed} />
-                    <PrivateRoute path='/my' component={MyRecipe} authed={authed} />
+                    <PrivateRoute path='/my' component={MyRecipes} authed={authed} />
                     <PrivateRoute path='/edit/:id' component={EditRecipe} authed={authed} />
-                    <PrivateRoute path='/recipe/:id' component={MyRecipe} authed={authed} />
+                    {/* <PrivateRoute path='/recipe/:id' component={MyRecipe} authed={authed} /> */}
                     <Redirect from="*" to="/auth" />
                   </Switch>
                 </div>

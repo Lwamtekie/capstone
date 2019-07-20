@@ -16,7 +16,7 @@ class MyRecipe extends React.Component {
       .catch(err => console.error('unable to get single ', err));
   }
 
-   deleteScat = () => {
+   deleteRecipe = () => {
      const recipeId = this.props.match.params.id;
      recipeData.deleteRecipe(recipeId)
        .then(() => this.props.history.push('/home'))
