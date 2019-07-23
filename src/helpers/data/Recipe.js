@@ -36,6 +36,7 @@ const getMyRecipes = uid => new Promise((resolve, reject) => {
 const deleteRecipe = recipeId => axios.delete(`${baseUrl}/recipe/${recipeId}.json`);
 const addMyRecipe = recipe => axios.post(`${baseUrl}/userrecipe.json`, recipe);
 const deleteMyRecipe = recipeId => axios.delete(`${baseUrl}/userrecipe/${recipeId}.json`);
+const postRecipe = newRecipe => axios.post(`${baseUrl}/recipe.json`, newRecipe);
 
 export default {
   getRecipes,
@@ -43,4 +44,5 @@ export default {
   getMyRecipes,
   deleteRecipe,
   deleteMyRecipe,
+  postRecipe,
 };
