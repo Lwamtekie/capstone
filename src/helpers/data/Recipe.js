@@ -21,7 +21,6 @@ const getRecipes = () => new Promise((resolve, reject) => {
 const getMyRecipes = uid => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/userrecipe.json?orderBy="uid"&equalTo="${uid}"`)
     .then((res) => {
-      console.error('res');
       const recipes = [];
       if (res.data !== null) {
         Object.keys(res.data).forEach((fbKey) => {
@@ -40,8 +39,8 @@ const deleteMyRecipe = recipeId => axios.delete(`${baseUrl}/userrecipe/${recipeI
 
 export default {
   getRecipes,
-  deleteRecipe,
   addMyRecipe,
   getMyRecipes,
+  deleteRecipe,
   deleteMyRecipe,
 };

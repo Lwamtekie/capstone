@@ -13,7 +13,7 @@ class MyRecipes extends React.Component {
     myRecipes: [],
   }
 
-  addMyRecipes = () => {
+  getMyRecipes = () => {
     const { uid } = firebase.auth().currentUser;
     RecipeData.getMyRecipes(uid)
       .then(myRecipes => this.setState({ myRecipes }))
@@ -21,7 +21,7 @@ class MyRecipes extends React.Component {
   }
 
   componentDidMount() {
-    this.addMyRecipes();
+    this.getMyRecipes();
   }
 
 
@@ -30,6 +30,7 @@ class MyRecipes extends React.Component {
       <MyRecipesCard
       key={recipe.id}
       recipe={recipe}
+      getMyRecipes={this.getMyRecipes}
       />
     ));
     return (

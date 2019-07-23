@@ -21,10 +21,9 @@ class Home extends React.Component {
 
 
    deleteRecipe = (recipeid) => {
-     console.error(recipeid);
      RecipeData.deleteRecipe(recipeid)
        .then(() => this.getRecipes())
-       .catch(err => console.error('unable to delete', err));
+       .catch(err => (err));
    }
 
    redirectToMyRecipes = () => {
@@ -43,7 +42,7 @@ class Home extends React.Component {
      ));
 
      return (
-        <div className="Home row">
+        <div className="home">
           <h1>Home</h1>
           <div className="d-flex flex-wrap">
             {makeRecipeCards}

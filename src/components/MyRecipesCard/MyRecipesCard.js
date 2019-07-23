@@ -1,12 +1,23 @@
 import React from 'react';
-
-import recipeShape from '../../helpers/propz/recipeShape';
+import PropTypes from 'prop-types';
+import MyRecipesShape from '../../helpers/propz/MyRecipesShape';
+import RecipeData from '../../helpers/data/Recipe';
 
 
 class MyRecipesCard extends React.Component {
   static propTypes = {
-    recipe: recipeShape.recipeCardShape,
+    recipe: MyRecipesShape.MyRecipesCardShape,
+    deleteMyRecipes: PropTypes.func.isRequired,
   }
+
+  deleteMyRecipes = () => {
+    const MyRecipesid = this.props.recipe.id;
+    console.error(MyRecipesid);
+    RecipeData.deleteMyRecipe(MyRecipesid)
+      .then(() => this.props.getMyRecipes())
+      .catch(err => console.error('no delete for you', err));
+  };
+
 
   render() {
     const { recipe } = this.props;
@@ -19,7 +30,7 @@ class MyRecipesCard extends React.Component {
            <h5 className="card-title">{recipe.type}</h5>
             <p className="card-text">{recipe.ingredients}</p>
             <p className="card-text">{recipe.instruction}</p>
-            <button className="btn btn-danger" onClick={this.delete}>Delete</button>
+            <button className="btn btn-danger" onClick={this.deleteMyRecipes}>Delete</button>
         </div>
       </div>
     </div>
