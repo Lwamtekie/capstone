@@ -40,7 +40,7 @@ class RecipeCard extends React.Component {
             <p className="card-text">{recipe.ingredients}</p>
             <p className="card-text">{recipe.instruction}</p>
             <button className="btn btn-danger" onClick={this.delete}>Delete</button>
-            <button className="btn btn-success" onClick={this.addRecipe}>Add</button>
+            <button className="btn btn-success" onClick={this.addRecipe}>AddToMyRecipe</button>
              </div>
         </div>
       </div>
