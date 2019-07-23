@@ -1,6 +1,4 @@
 import React from 'react';
-import firebase from 'firebase/app';
-import 'firebase/auth';
 import RecipeData from '../../helpers/data/Recipe';
 import RecipeCard from '../RecipeCard/RecipeCard';
 
@@ -12,8 +10,7 @@ class Home extends React.Component {
   }
 
   getRecipes = () => {
-    const { uid } = firebase.auth().currentUser;
-    RecipeData.getMyRecipes(uid)
+    RecipeData.getRecipes()
       .then(recipes => this.setState({ recipes }))
       .catch(err => console.error('could not get recipes', err));
   }
@@ -22,11 +19,15 @@ class Home extends React.Component {
     this.getRecipes();
   }
 
-   deleteRecipe = (recipeId) => {
-     console.error(recipeId);
-     RecipeData.deleteRecipe(recipeId)
+
+   deleteRecipe = (recipeid) => {
+     RecipeData.deleteRecipe(recipeid)
        .then(() => this.getRecipes())
-       .catch(err => console.error('unable to delete', err));
+       .catch(err => (err));
+   }
+
+   redirectToMyRecipes = () => {
+     this.props.history.push('/my');
    }
 
 
@@ -35,16 +36,17 @@ class Home extends React.Component {
         <RecipeCard
           key={recipe.id}
           recipe={recipe}
+          redirectToMyRecipes={this.redirectToMyRecipes}
           deleteRecipe={this.deleteRecipe}
-        />
+           />
      ));
 
      return (
-        <div className="Home row">
+        <div className="home">
           <h1>Home</h1>
-          <div className="d-flex">
+          <div className="d-flex flex-wrap">
             {makeRecipeCards}
-          </div>
+</div>
 
         </div>
      );
