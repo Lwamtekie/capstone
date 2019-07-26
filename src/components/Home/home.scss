@@ -1,5 +1,5 @@
 .home{
-  background-image: url("https://i.pinimg.com/236x/9b/b1/14/9bb1144f537027d3149ac3776bb3d0bd--kids-online-ethiopia.jpg");
+  background-image: url("http://shop.inthetravellab.com/wp-content/uploads/2013/12/IMG_7348.jpg");
   background-position: center center ; 
   background-size: cover;
    background-attachment: fixed;
@@ -47,12 +47,19 @@ p {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color:bisque;
   background-clip: border-box;
   border: 1px solid rgba(0,0,0,.125);
   border-radius: .25rem;
+  background-image: url("http://www.attachmax.com/p/2018/11/mexican-restaurant-menu-backgrounds-printables-and-menu-for-mexican-menu-backgrounds-600x600.jpg");
+  background-position: center center ; 
+  background-size: cover;
+   background-attachment: fixed;
 }
 
 .row {
 display: inline;
+}
+
+.btn-danger{
+  margin: 1rem;
 }

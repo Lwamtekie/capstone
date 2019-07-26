@@ -33,16 +33,22 @@ const getMyRecipes = uid => new Promise((resolve, reject) => {
     .catch(err => reject(err));
 });
 
+const getSingleRecipe = recipeId => axios.get(`${baseUrl}/recipe/${recipeId}.json`);
 const deleteRecipe = recipeId => axios.delete(`${baseUrl}/recipe/${recipeId}.json`);
 const addMyRecipe = recipe => axios.post(`${baseUrl}/userrecipe.json`, recipe);
 const deleteMyRecipe = recipeId => axios.delete(`${baseUrl}/userrecipe/${recipeId}.json`);
 const postRecipe = newRecipe => axios.post(`${baseUrl}/recipe.json`, newRecipe);
+const putRecipe = (updateRecipe, recipeId) => axios.put(`${baseUrl}/recipe/${recipeId}.json`, updateRecipe);
+
 
 export default {
   getRecipes,
+  getSingleRecipe,
   addMyRecipe,
   getMyRecipes,
   deleteRecipe,
   deleteMyRecipe,
   postRecipe,
+  putRecipe,
+ 
 };

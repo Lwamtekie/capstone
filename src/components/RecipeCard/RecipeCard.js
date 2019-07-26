@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import firebase from 'firebase/app';
 import 'firebase/auth';
@@ -25,11 +26,20 @@ class RecipeCard extends React.Component {
     recipe.uid = firebase.auth().currentUser.uid;
     RecipeData.addMyRecipe(recipe)
       .then(() => this.props.redirectToMyRecipes())
-      .catch(err => console.error(err));
+      .catch(err => (err));
   }
+
+  selectRecipe = (e) => {
+    e.preventDefault();
+    const { recipe, selectRecipeToEdit } = this.props;
+    selectRecipeToEdit(recipe.id);
+  }
+
 
   render() {
     const { recipe } = this.props;
+    const editLink = `/edit/${recipe.id}`;
+    const singleLink = `/single/${recipe.id}`;
     return (
       <div className="RecipeCard col-4">
         <div className="card">
@@ -39,6 +49,8 @@ class RecipeCard extends React.Component {
            <h5 className="card-title">{recipe.type}</h5>
             <p className="card-text">{recipe.ingredients}</p>
             <p className="card-text">{recipe.instruction}</p>
+            <Link className="btn btn-success" to={singleLink}>View</Link>
+            <Link className="btn btn-primary" to={editLink}>Edit</Link>
             <button className="btn btn-danger" onClick={this.delete}>Delete</button>
             <button className="btn btn-success" onClick={this.addRecipe}>AddToMyRecipe</button>
              </div>
