@@ -39,7 +39,7 @@ class NewRecipe extends React.Component {
     saveMe.uid = firebase.auth().currentUser.uid;
     RecipeData.postRecipe(saveMe)
       .then(() => this.props.history.push('/home'))
-      .catch(err => console.error('unable to save', err));
+      .catch(err => (err));
   }
 
   render() {

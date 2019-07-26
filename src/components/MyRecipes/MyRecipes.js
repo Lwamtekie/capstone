@@ -17,7 +17,7 @@ class MyRecipes extends React.Component {
     const { uid } = firebase.auth().currentUser;
     RecipeData.getMyRecipes(uid)
       .then(myRecipes => this.setState({ myRecipes }))
-      .catch(err => console.error('could not get recipes', err));
+      .catch(err => (err));
   }
 
   componentDidMount() {

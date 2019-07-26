@@ -9,10 +9,11 @@ class Home extends React.Component {
     recipes: [],
   }
 
+
   getRecipes = () => {
     RecipeData.getRecipes()
       .then(recipes => this.setState({ recipes }))
-      .catch(err => console.error('could not get recipes', err));
+      .catch(err => (err));
   }
 
   componentDidMount() {

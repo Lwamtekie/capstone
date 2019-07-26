@@ -14,7 +14,7 @@ import fbConnection from '../helpers/data/connection';
 import EditRecipe from '../components/EditRecipe/EditRecipe';
 import MyRecipes from '../components/MyRecipes/MyRecipes';
 import NewRecipe from '../components/NewRecipe/NewRecipe';
-
+import SingleRecipe from '../components/SingleRecipe/SingleRecipe';
 
 fbConnection();
 const PublicRoute = ({ component: Component, authed, ...rest }) => {
@@ -64,6 +64,7 @@ class App extends React.Component {
                     <PrivateRoute path='/my' component={MyRecipes} authed={authed} />
                     <PrivateRoute path='/new' component={NewRecipe} authed={authed}/>
                     <PrivateRoute path='/edit/:id' component={EditRecipe} authed={authed} />
+                    <PrivateRoute path='/single/:id' component={SingleRecipe} authed={authed} />
                     <Redirect from="*" to="/auth" />
                   </Switch>
                 </div>

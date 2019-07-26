@@ -12,10 +12,9 @@ class MyRecipesCard extends React.Component {
 
   deleteMyRecipes = () => {
     const MyRecipesid = this.props.recipe.id;
-    console.error(MyRecipesid);
     RecipeData.deleteMyRecipe(MyRecipesid)
       .then(() => this.props.getMyRecipes())
-      .catch(err => console.error('no delete for you', err));
+      .catch(err => (err));
   };
 
 
