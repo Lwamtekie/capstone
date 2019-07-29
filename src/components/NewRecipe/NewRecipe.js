@@ -46,7 +46,7 @@ class NewRecipe extends React.Component {
     const { newRecipe } = this.state;
     return (
       <div className="NewRecipe">
-        <h1>New Recipe</h1>
+        <h2 lassName="New">New Recipe</h2>
         <form onSubmit={this.formSubmit}>
           <div className="form-group">
             <label htmlFor="name">name</label>

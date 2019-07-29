@@ -35,7 +35,7 @@ class MyRecipes extends React.Component {
     ));
     return (
       <div className="MyRecipes">
-        <h1>My Recipes</h1>
+        <h2>My Recipes</h2>
         <div className= "d-flex flex-wrap">
           {makeMyRecipesCards}
         </div>

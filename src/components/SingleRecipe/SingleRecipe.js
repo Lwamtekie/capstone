@@ -1,18 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import StarRatingComponent from 'react-star-rating-component';
 import RecipeData from '../../helpers/data/Recipe';
 import './SingleRecipe.scss';
+
 
 class SingleRecipe extends React.Component {
   state = {
     recipe: {},
+    rating: 1,
+  }
+
+  onStarClick(nextValue, prevValue, name) {
+    this.setState({ rating: nextValue });
+  }
+
+  getRecipe = () => {
+    const recipeId = this.props.match.params.id;
+    RecipeData.getSingleRecipe(recipeId)
+      .then(recipePromise => this.setState({ recipe: recipePromise.data, rating: recipePromise.data.rating }))
+      .catch(err => (err));
   }
 
   componentDidMount() {
-    const recipeId = this.props.match.params.id;
-    RecipeData.getSingleRecipe(recipeId)
-      .then(recipePromise => this.setState({ recipe: recipePromise.data }))
-      .catch(err => console.error('unable to get single recipe', err));
+    this.getRecipe();
   }
 
   deleteRecipe = () => {
@@ -22,9 +32,20 @@ class SingleRecipe extends React.Component {
       .catch(err => console.error('unable to delete', err));
   }
 
+  rating = () => {
+    const recipeId = this.props.match.params.id;
+    const { recipe } = this.state;
+    recipe.rating = this.state.rating;
+    RecipeData.putRecipe(recipe, recipeId)
+      .then(() => this.getRecipe())
+      .catch(err => console.error(err));
+  }
+
+
   render() {
     const { recipe } = this.state;
-    const editLink = `/edit/${this.props.match.params.id}`;
+    const { rating } = this.state;
+
     return (
       <div className="SingleRecipe col-4">
         <div className="card">
@@ -34,8 +55,17 @@ class SingleRecipe extends React.Component {
            <h5 className="card-title">{recipe.type}</h5>
             <p className="card-text">{recipe.ingredients}</p>
             <p className="card-text">{recipe.instruction}</p>
-            <Link className="btn btn-primary" to={editLink}>Edit</Link>
-            <button className="btn btn-danger" onClick={this.deleteRecipe}>Delete</button>
+            <div>
+       <h2>Rating from state: {rating}</h2>
+        <StarRatingComponent
+          name="rate1"
+          starCount={5}
+          value={rating}
+          onStarClick={this.onStarClick.bind(this)}
+        />
+      </div>
+      <button className="btn btn-danger" onClick={this.deleteRecipe}>Delete</button>
+      <button className="btn btn-danger" onClick={this.rating}>Save</button>
              </div>
         </div>
       </div>

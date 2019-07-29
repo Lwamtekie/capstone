@@ -1,5 +1,6 @@
+
 .home{
-  background-image: url("http://shop.inthetravellab.com/wp-content/uploads/2013/12/IMG_7348.jpg");
+  background-image: url("https://providencerestaurantws.com/wp-content/uploads/2015/11/woodbackground.jpg");
   background-position: center center ; 
   background-size: cover;
    background-attachment: fixed;
@@ -42,6 +43,7 @@ p {
 }
 
 .card {
+  font-family: 'Acme', sans-serif;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -62,4 +64,39 @@ display: inline;
 
 .btn-danger{
   margin: 1rem;
+}
+h1 {
+color: papayawhip;
+  font-size: 2.5rem;
+  font-family: 'Acme', sans-serif;
+}
+
+.btn-danger {
+  
+  border: solid;
+  color: #fff;
+  background-color:olivedrab;
+  border-color: olivedrab;
+  border-radius: 50%;
+}
+
+.btn-primary {
+  
+  border: solid;
+  border-radius: 50%;
+  margin-left: 2rem;
+  margin-right: 2;
+  color: #fff;
+  background-color: olivedrab;
+  border-color: olivedrab;
+}
+
+.btn-success {
+  
+  border: solid;
+  border-radius:100%;
+  color: #fff;
+  background-color: rosybrown;
+  border-color: rosybrown;
+  margin-left: 1rem;
 }
