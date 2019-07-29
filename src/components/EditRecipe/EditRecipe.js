@@ -1,4 +1,5 @@
 import React from 'react';
+
 import RecipeData from '../../helpers/data/Recipe';
 import './EditRecipe.scss';
 
@@ -8,6 +9,7 @@ const defaultRecipe = {
   type: '',
   ingredients: '',
   instruction: '',
+  rating: '',
   uid: '',
 };
 
@@ -50,6 +52,7 @@ class EditRecipe extends React.Component {
 
   render() {
     const { editRecipe } = this.state;
+
     return (
       <div className="EditRecipe">
         <h1>Edit Recipe</h1>
@@ -109,19 +112,8 @@ class EditRecipe extends React.Component {
               onChange={this.instructionChange}
             />
           </div>
-          <div className="dropdown">
-            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              rating
-            </button>
-            <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <span className="dropdown-item">1</span>
-              <span className="dropdown-item">2</span>
-              <span className="dropdown-item">3</span>
-              <span className="dropdown-item">4</span>
-              <span className="dropdown-item">5</span>
-            </div>
-          </div>
-          <button type="submit" className="btn btn-primary">Save Changes</button>
+
+      <button type="submit" className="btn btn-primary">Save Changes</button>
         </form>
       </div>
     );
