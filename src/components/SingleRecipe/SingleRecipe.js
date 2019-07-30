@@ -33,11 +33,15 @@ class SingleRecipe extends React.Component {
   }
 
   rating = () => {
+    console.error('test');
     const recipeId = this.props.match.params.id;
     const { recipe } = this.state;
     recipe.rating = this.state.rating;
     RecipeData.putRecipe(recipe, recipeId)
-      .then(() => this.getRecipe())
+      .then(() => {
+        this.getRecipe();
+        this.props.history.push('/home');
+      })
       .catch(err => console.error(err));
   }
 

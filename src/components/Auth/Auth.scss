@@ -14,11 +14,8 @@
   padding: 2rem 1rem;
  border-radius: .3rem;
   width: 600px;
-  border:solid;
-  border-width: thick;
-  box-shadow: 2rem;
   height: 700px;
- 
+  
 }
 
 
@@ -30,7 +27,15 @@ img {
   border-style: none;
 }
 
-.h1 {
+.Header {
   color: black;
   font-size: 2.5rem;
+}
+
+.h6{
+  font-family: 'Acme', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align-last: left;
+  text-align: initial;
 }

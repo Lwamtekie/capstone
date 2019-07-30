@@ -7,15 +7,14 @@
 }
  
 p {
-  border: black;
-  border: double;
-  border: solid;
-  margin-top: 0;
+  // border: black;
+  // border: double;
+  // border: solid;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   text-align-last: left;
   text-align: initial;
-  font-style: oblique;
-}
+} 
 
 .card-img-top {
   width: 30%;
@@ -43,6 +42,9 @@ p {
 }
 
 .card {
+  border: black;
+  border: double;
+  border: solid;
   font-family: 'Acme', sans-serif;
   position: relative;
   display: flex;
@@ -66,7 +68,7 @@ display: inline;
   margin: 1rem;
 }
 h1 {
-color: papayawhip;
+
   font-size: 2.5rem;
   font-family: 'Acme', sans-serif;
 }
@@ -99,4 +101,11 @@ color: papayawhip;
   background-color: rosybrown;
   border-color: rosybrown;
   margin-left: 1rem;
+}
+
+.dv-star-rating {
+margin-inline-start: 2rem;
+margin-bottom: 2rem;
+display: inline-block;
+position: relative;
 }
