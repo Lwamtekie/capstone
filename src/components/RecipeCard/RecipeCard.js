@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import StarRatingComponent from 'react-star-rating-component';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import RecipeData from '../../helpers/data/Recipe';
@@ -49,10 +49,15 @@ class RecipeCard extends React.Component {
            <h5 className="card-title">{recipe.type}</h5>
             <p className="card-text">{recipe.ingredients}</p>
             <p className="card-text">{recipe.instruction}</p>
+            <StarRatingComponent
+          name="rate1"
+          starCount={5}
+          value={recipe.rating}
+        />
+            <Link className="btn btn-success" to={singleLink}>RateMe</Link>
             <Link className="btn btn-primary" to={editLink}>Edit</Link>
             <button className="btn btn-success" onClick={this.addRecipe}>AddToMyRecipe</button>
             <button className="btn btn-danger" onClick={this.delete}>Delete</button>
-            <Link className="btn btn-success" to={singleLink}>RateMe</Link>
              </div>
         </div>
       </div>

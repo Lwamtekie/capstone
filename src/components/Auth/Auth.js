@@ -18,7 +18,7 @@ class Auth extends React.Component {
                <div className="jumbotron text-center col-mid-6">
             <h1 className="Header">food adventure</h1>
             <img src={goggleFood} alt="..." onClick={this.loginClickEvent}/>
-            <p>I have been working in customer service for 4 years.
+            <h6>I have been working in customer service for 4 years.
               Previous to starting NSS, I didn't have any programing experience.
               What I love about web development is the challenge of forming ideas
               and turning them into a reality, that other people can interact with.
@@ -27,7 +27,7 @@ class Auth extends React.Component {
               me to look into programs offered by the school.
               Stuff and students at NSS are welcoming and encouraging.
               Especially as someone who constantly struggles due to luck of coding skills,
-              I have found a home at NSS.</p>
+              I have found a home at NSS.</h6>
           </div>
         </div>
 
