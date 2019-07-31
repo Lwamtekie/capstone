@@ -10,3 +10,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+.image {
+  width: 50%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  width: 200px;
+    height: 200px;
+    box-shadow: 1px 2px 2px 1px;
+}

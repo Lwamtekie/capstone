@@ -46,7 +46,7 @@ class RecipeCard extends React.Component {
         <div className="card">
           <div className="card-body">
             <h4 className="card-title">{recipe.name}</h4>
-            <img src={recipe.imageurl} className="card-img-top" alt="..." />
+            <img src={recipe.imageurl} className="image" alt="..." />
            <h5 className="card-title">{recipe.type}</h5>
             <p className="card-text">{recipe.ingredients}</p>
             <p className="card-text">{recipe.instruction}</p>
