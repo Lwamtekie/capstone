@@ -16,7 +16,7 @@ class Auth extends React.Component {
     return (
       <div className="Auth">
                <div className="jumbotron text-center col-mid-6">
-            <h1 className="Header">food adventure</h1>
+            <h1 className="Header">Food Adventure</h1>
             <img src={goggleFood} alt="..." onClick={this.loginClickEvent}/>
             <h6>I have been working in customer service for 4 years.
               Previous to starting NSS, I didn't have any programing experience.

@@ -6,6 +6,7 @@ import 'firebase/auth';
 import RecipeData from '../../helpers/data/Recipe';
 import recipeShape from '../../helpers/propz/recipeShape';
 
+import './RecipeCard.scss';
 
 class RecipeCard extends React.Component {
   static propTypes = {
@@ -54,10 +55,14 @@ class RecipeCard extends React.Component {
           starCount={5}
           value={recipe.rating}
         />
-            <Link className="btn btn-success" to={singleLink}>RateMe</Link>
-            <Link className="btn btn-primary" to={editLink}>Edit</Link>
+        <div className="rateAndAdd">
+            <Link className="btn btn-info" to={singleLink}>RateMe</Link>
             <button className="btn btn-success" onClick={this.addRecipe}>AddToMyRecipe</button>
-            <button className="btn btn-danger" onClick={this.delete}>Delete</button>
+        </div>
+        <div className="editAndDelete">
+            <Link className="btn btn-warning" to={editLink}>Edit</Link>
+           <button className="btn btn-danger" onClick={this.delete}>Delete</button>
+        </div>
              </div>
         </div>
       </div>
