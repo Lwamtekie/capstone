@@ -17,7 +17,9 @@ p {
 } 
 
 .card-img-top {
-  width: 30%;
+  width: 50%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
 }
 
 .d-flex {
@@ -52,21 +54,20 @@ p {
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
-  border: 1px solid rgba(0,0,0,.125);
+  border: 1px solid red (0,0,0,.125);
   border-radius: .25rem;
   background-image: url("http://www.attachmax.com/p/2018/11/mexican-restaurant-menu-backgrounds-printables-and-menu-for-mexican-menu-backgrounds-600x600.jpg");
   background-position: center center ; 
   background-size: cover;
    background-attachment: fixed;
+   box-shadow: 5px 10px;
 }
 
 .row {
 display: inline;
 }
 
-.btn-danger{
-  margin: 1rem;
-}
+
 h1 {
 
   font-size: 2.5rem;
@@ -74,33 +75,31 @@ h1 {
 }
 
 .btn-danger {
-  
+  border-radius: 100px / 50px;
   border: solid;
   color: #fff;
   background-color:olivedrab;
   border-color: olivedrab;
-  border-radius: 50%;
 }
 
 .btn-primary {
   
   border: solid;
   border-radius: 50%;
-  margin-left: 2rem;
-  margin-right: 2;
+ 
   color: #fff;
   background-color: olivedrab;
   border-color: olivedrab;
 }
 
 .btn-success {
-  
+  margin-bottom: 2rem;
   border: solid;
-  border-radius:100%;
+  border-radius:100px;
   color: #fff;
   background-color: rosybrown;
   border-color: rosybrown;
-  margin-left: 1rem;
+  
 }
 
 .dv-star-rating {
@@ -108,4 +107,28 @@ margin-inline-start: 2rem;
 margin-bottom: 2rem;
 display: inline-block;
 position: relative;
+}
+
+.btn-info {
+  margin-bottom: 2rem;
+  border: solid;
+  border-radius:100px;
+  color: #fff;
+  background-color: rosybrown;
+  border-color: rosybrown;
+  
+}
+.btn-warning{
+  
+  border: solid;
+  color: #fff;
+  background-color:olivedrab;
+  border-color: olivedrab;
+  border-radius: 100px / 50px;
+}
+
+.col-4 {
+  margin-top: 1rem;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
 }

@@ -21,15 +21,19 @@
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    font-family: 'Acme', sans-serif;
 }
 
 label {
-  font-weight: bolder;
+  font-family: Aldrich;
   font-size: 2rem;
   display: inline-block;
   margin-bottom: .5rem;
+  
 }
 
 h2{
+  
+  font-family: Aldrich;
   color:black;
 }
