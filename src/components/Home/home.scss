@@ -1,5 +1,6 @@
 
 .home{
+  height: 100vh;
   background-image: url("https://providencerestaurantws.com/wp-content/uploads/2015/11/woodbackground.jpg");
   background-position: center center ; 
   background-size: cover;
@@ -16,10 +17,12 @@ p {
   text-align: initial;
 } 
 
-.card-img-top {
+.image{
   width: 50%;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
+    width: 200px;
+    height: 200px;
 }
 
 .d-flex {
@@ -54,13 +57,12 @@ p {
   min-width: 0;
   word-wrap: break-word;
   background-clip: border-box;
-  border: 1px solid red (0,0,0,.125);
+  box-shadow: 1px 2px 2px 1px;
   border-radius: .25rem;
   background-image: url("http://www.attachmax.com/p/2018/11/mexican-restaurant-menu-backgrounds-printables-and-menu-for-mexican-menu-backgrounds-600x600.jpg");
   background-position: center center ; 
   background-size: cover;
    background-attachment: fixed;
-   box-shadow: 5px 10px;
 }
 
 .row {
