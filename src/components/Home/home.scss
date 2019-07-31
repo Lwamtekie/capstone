@@ -1,6 +1,6 @@
 
 .home{
-  height: 100vh;
+  height: 100vh-1440*4012;
   background-image: url("https://providencerestaurantws.com/wp-content/uploads/2015/11/woodbackground.jpg");
   background-position: center center ; 
   background-size: cover;
@@ -8,9 +8,7 @@
 }
  
 p {
-  // border: black;
-  // border: double;
-  // border: solid;
+  
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align-last: left;
