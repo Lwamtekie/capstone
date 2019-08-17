@@ -48,8 +48,7 @@ class Home extends React.Component {
           <div className="d-flex flex-wrap">
             {makeRecipeCards}
 </div>
-
-        </div>
+ </div>
      );
    }
 }

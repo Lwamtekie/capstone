@@ -7,8 +7,6 @@ const recipeCardShape = PropTypes.shape({
   type: PropTypes.string.isRequired,
   ingredients: PropTypes.string.isRequired,
   instruction: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
-  uid: PropTypes.string.isRequired,
 });
 
 export default { recipeCardShape };
