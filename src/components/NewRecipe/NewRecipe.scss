@@ -6,6 +6,10 @@
   background-size: cover;
    background-attachment: fixed;
    align-content: center;
+   position: relative;
+   transition: all 0.3s;
+   overflow: scroll;
+   flex: 1 4 auto;
 }
 .form-control {
   margin: 0 auto;
@@ -36,4 +40,14 @@ h2{
   
   font-family: Aldrich;
   color:black;
+ 
+}
+
+.btn-primary {
+  margin-bottom: 2rem;
+  border: solid;
+  border-radius: 25px;
+  color: #fff;
+  background-color: olivedrab;
+  border-color: olivedrab;
 }

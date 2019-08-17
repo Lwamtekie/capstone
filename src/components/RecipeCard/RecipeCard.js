@@ -53,7 +53,7 @@ class RecipeCard extends React.Component {
             <StarRatingComponent
           name="rate1"
           starCount={5}
-          value={recipe.rating}
+          value={Number(recipe.rating)}
         />
         <div className="rateAndAdd">
             <Link className="btn btn-info" to={singleLink}>RateMe</Link>

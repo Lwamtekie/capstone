@@ -5,6 +5,8 @@
     background-position: center center ; 
     background-size: cover;
      background-attachment: fixed;
+     overflow: scroll;
+     transition: all 0.3s;
 }
 
 
@@ -25,6 +27,7 @@ img {
   height: 400px;
   vertical-align: middle;
   border-style: none;
+  
 }
 
 .Header {

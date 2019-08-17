@@ -4,11 +4,14 @@
   background-image: url("https://providencerestaurantws.com/wp-content/uploads/2015/11/woodbackground.jpg");
   background-position: center center ; 
   background-size: cover;
-   background-attachment: fixed;
+  background-attachment: fixed;
+  overflow: scroll;
+  flex: 1 4 auto;
+  position: relative;
 }
  
 p {
-  
+  // font-size: 1.8rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
   text-align-last: left;
@@ -16,11 +19,11 @@ p {
 } 
 
 .image{
+  border:solid;
   width: 50%;
-    border-top-left-radius: calc(.25rem - 1px);
+    // border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
-    width: 200px;
-    height: 200px;
+   height: 200px;
 }
 
 .d-flex {
@@ -71,7 +74,7 @@ display: inline;
 h1 {
 
   font-size: 2.5rem;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Acme';
 }
 
 .btn-danger {
