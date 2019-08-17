@@ -1,3 +1,43 @@
+Description
+This is a social network created for food lovers and food adventurers.
+
+Screenshots:
+
+
+
+login Page:
+
+
+
+home Page:
+
+
+
+my Recipe page:
+
+
+
+create Recipe page:
+
+
+rate Recipe page:
+
+
+
+Edit Recipe page:
+
+
+
+
+Installation Instructions:
+
+
+
+How to run:
+
+
+Author:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
